@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: #050814;
+  color: white;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-family: "Great Vibes", cursive;
+  font-size: 26px;
+  color: #a6ff00;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-btn {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #a6ff00;
+  font-family: "Great Vibes", cursive;
+}
+
+.hero button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #1e90ff;
+  color: white;
+  cursor: pointer;
+}
+
+.hero .alt {
+  background: #ff7a00;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Great Vibes", cursive;
+  color: #a6ff00;
+  font-size: 36px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.grid div {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.stats div {
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* FORM */
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  background: #00ff88;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  background: black;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: #1e90ff;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: black;
+    padding: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
